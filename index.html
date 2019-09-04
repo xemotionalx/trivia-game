@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trivia</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Rock+Salt&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/3f7d57fead.js"></script>
+
+</head>
+<body>
+
+  <div class="container">
+    <header>
+        <div class="header__text-box">
+            EMO TRIVIA
+        </div>
+        <div class="header__divider-box">
+            <img src="assets/images/black-bood-divider.gif" class="header__divider">
+        </div>
+    </header>  
+
+<div class="content">
+
+        <div id="content__timer">
+                10 s.
+            </div>
+    
+    <div id="content__question-text">
+        Are you emo? Or just a poser?
+    </div>
+
+    <div id="content__answer-reveal"></div>
+
+    <div id="content__answer-gif"></div>
+
+    <div class="content__answers">
+    <button class="btn btn__answer" id="content__answer-1" value="1">
+            <i class="fas fa-skull-crossbones"></i>
+        i'm emo
+    </button>
+
+
+    <button class="btn btn__answer" id="content__answer-2" value="2">
+            <i class="fas fa-skull-crossbones"></i>
+        i'm a poser
+    </button>
+
+
+    <button class="btn btn__answer" id="content__answer-3" value="3">
+            <i class="fas fa-skull-crossbones"></i>
+        i'm goth
+    </button>
+
+    
+    <button class="btn btn__answer" id="content__answer-4" value="4">
+            <i class="fas fa-skull-crossbones"></i>
+        i'm a prep
+    </button>
+</div>
+
+    <button class="btn" id="btn__start">enter the void</button>
+
+
+    <div class="scores">
+
+            <div id="scores__correct"></div>
+            <div id="scores__wrong"></div>
+            <div id="scores__missed"></div>
+            <div id="scores__explanation"></div>
+
+            <button class="btn" id="btn__play-again">play again?</button>
+        
+
+
+    </div>
+
+</div>
+
+
+  </div>
+
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/game.js"></script>
+
+</body>
+</html>

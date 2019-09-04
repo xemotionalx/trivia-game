@@ -1,0 +1,124 @@
+*,
+*::after,
+*::before {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-image: url("../images/checkered-bg-tile.png");
+    background-color: black;
+}
+
+.container {
+    background-color: #d198bc;
+    /* border-left: 1rem;
+    border-right: 1rem;
+    border-color: #000;
+    border-style: solid; */
+    height: 100vh;
+    width: 60%;
+    position: relative;
+}
+
+header {
+    height: 20vh;
+    background-image: linear-gradient(
+        to bottom left,
+        rgba(209, 152, 188, 0.75),
+        rgba(160, 83, 134, 0.75)),
+        url("../images/emo-tile-wallpaper.jpg");
+    border-bottom: 1em solid #000;
+    position: relative;
+}
+
+.header__text-box {
+    font-family: 'Rock Salt', cursive;
+    color: #000;
+    font-size: 6em;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.header__divider-box {
+    position: absolute;
+    bottom: -19rem;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+.content {
+    color: #1a1919;
+    position: absolute;
+    top: 25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+#content__timer {
+    font-size: 3.5rem;
+    margin-bottom: 3rem;
+    display: none;
+}
+
+#content__question-text,
+#scores__explanation,
+#content__answer-reveal {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    padding: 1rem;
+}
+
+.content__answers {
+    display: none;
+}
+
+.scores {
+    display: none;
+}
+
+.btn__answer,
+#scores__correct,
+#scores__wrong,
+#scores__missed {
+    background-color: #d198bc;
+    font-size: 1.6rem;
+    line-height: 4rem;
+    border: 1px dotted #000;
+    margin: 1rem;
+    display: block;
+    width: 90%;
+}
+
+.btn__answer:hover {
+    background-color: #000;
+    color: #d198bc;
+    border: 1px dotted #ffd4ef;
+}
+
+#btn__start {
+background-color: #000;
+border: 2px solid #ffd4ef;
+color: #ffd4ef;
+font-size: 1.2rem;
+text-transform: uppercase;
+}
+
+.btn__start:hover {
+    background-color: #d198bc;
+    border: 2px solid #000;
+    color: #1a1919;
+}
