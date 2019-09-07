@@ -156,6 +156,7 @@ var game = {
 
         game.answerGif = $("<img>");
         game.answerGif.attr("src", "assets/images/answer-gifs/answer-gif-" + game.questionNumber + ".gif")
+        game.answerGif.attr("class", "band-gif");
         $("#content__answer-gif").css("display", "block");
         $("#content__answer-gif").append(game.answerGif);
 
@@ -186,9 +187,9 @@ var game = {
             } else if (game.correct < 8 && game.correct >= 5) {
                 $("#scores__explanation").text("you're pretty emo but it seems like you might actually go out and enjoy the sun or listen to a pop tune sometimes. good for you.");
             } else if (game.correct < 5 && game.correct >= 2) {
-                $("#scores__explanation").text("maybe you used to listen to dashboard confessional in high school or maybe you're a hipster who only listens to cap'n jazz. either way, it's not enough. you're not actually emo.");
+                $("#scores__explanation").text("maybe you used to listen to dashboard confessional in high school but you sold out and became a well-adjusted adult. you're not actually emo.");
             } else if (game.correct < 2) {
-                $("#scores__explanation").text("why did you bother taking this quiz? you're definitely a poser.");
+                $("#scores__explanation").text("looks like you're too busy enjoying your life to even recognize a single bitter emo lyric. you're such a poser.");
             }
         }
     },
